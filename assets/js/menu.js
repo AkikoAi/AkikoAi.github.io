@@ -1,4 +1,5 @@
 try {
+	alert('Nih api sepi bang bantu promosiin bang, kalo sekiranya nih api ada yang kurang ato gimana contact gua :)')
 	//-- tag html control
 	item_fc = document.querySelector('[data-widget=treeview]');
 	item_msg = document.querySelector('#notify');
@@ -53,7 +54,7 @@ try {
 		}else if(/id|indonesia/.test(region)&&date.getMonth()==8&&date.getDate()==17){
 			tks = tks = `<p style="color: red;background: rgba(128,128,128,0.3);">Selamat hari kem<span style="color: white;">erdekaan Indonesia</span></p><div style="border:1px solid black;background:red;display:block;color:red;">.</div><div style="border:1px solid black;border-top:none;background:white;display:block;color:white;">.</div>`;
 		} else{
-			tks = `<p style="color: gray;">ingin request menu chat <a style="color: blue;" href="https://wa.me/628990911211?text=assalamualaikum bang mau request menu">owner.</a></p>`;
+			tks = `<p style="color: gray;">kok sepi bang? ... Rame in lah :)</p>`;
 		}
 		
 			Toast.fire({
