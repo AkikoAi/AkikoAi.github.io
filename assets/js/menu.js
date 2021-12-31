@@ -1,5 +1,15 @@
 try {
-	alert('Nih api sepi bang bantu promosiin bang, kalo sekiranya nih api ada yang kurang ato gimana contact gua :)')
+	alert('Nih api sepi bang bantu promosiin bang, kalo sekiranya nih api ada yang kurang ato gimana contact gua :)');
+	alert('Selamat tahun baru 2020 Bang');
+	try{
+	prompt('gak bareng pacar bang?').then(resp=>{
+		if(resp){
+			alert('wihh GG lu bang');
+		}else{
+			alert('Awokawokawok, senasib kita bang 😂');
+		}
+	});
+	}catch(e){}
 	//-- tag html control
 	item_fc = document.querySelector('[data-widget=treeview]');
 	item_msg = document.querySelector('#notify');
