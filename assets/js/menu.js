@@ -4,9 +4,9 @@ try {
 	try{
 	prompt('gak bareng pacar bang?\nyes/no').then(resp=>{
 		if(resp.trim().toLowerCase()=='yes'){
-			alert('wihh GG lu bang');
-		}else if(resp.trim().toLowerCase()=='no'){
 			alert('Awokawokawok, senasib kita bang 😂');
+		}else if(resp.trim().toLowerCase()=='no'){
+			alert('wihh GG lu bang');
 		}else{
 			alert('dahlah');
 		}
