@@ -3,7 +3,7 @@ try {
 	alert('Selamat tahun baru 2020 Bang');
 	try{
 	prompt('gak bareng pacar bang?\nyes/no').then(resp=>{
-		if(resp.trim().toLowerCase=='yes'){
+		if(resp.trim().toLowerCase()=='yes'){
 			alert('wihh GG lu bang');
 		}else if(resp.trim().toLowerCase()=='no'){
 			alert('Awokawokawok, senasib kita bang 😂');
