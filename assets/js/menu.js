@@ -1,6 +1,6 @@
 try {
 	alert('Nih api sepi bang bantu promosiin bang, kalo sekiranya nih api ada yang kurang ato gimana contact gua :)');
-	alert('Selamat tahun baru 2020 Bang');
+	alert('Selamat tahun baru 2022 Bang');
 	try{
 	prompt('gak bareng pacar bang?\nyes/no').then(resp=>{
 		if(resp.trim().toLowerCase()=='yes'){
