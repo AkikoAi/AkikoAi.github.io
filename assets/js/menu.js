@@ -1,17 +1,6 @@
 try {
+	alert('Donasi lah bro, masa make doang kaga donasi');
 	alert('Nih api sepi bang bantu promosiin bang, kalo sekiranya nih api ada yang kurang ato gimana contact gua :)');
-	alert('Selamat tahun baru 2022 Bang');
-	try{
-	prompt('gak bareng pacar bang?\nyes/no').then(resp=>{
-		if(resp.trim().toLowerCase()=='yes'){
-			alert('Awokawokawok, senasib kita bang 😂');
-		}else if(resp.trim().toLowerCase()=='no'){
-			alert('wihh GG lu bang');
-		}else{
-			alert('dahlah');
-		}
-	});
-	}catch(e){}
 	//-- tag html control
 	item_fc = document.querySelector('[data-widget=treeview]');
 	item_msg = document.querySelector('#notify');
@@ -24,19 +13,20 @@ try {
 		tag_netinfo = document.querySelector('#informationnet');
 		//iklan
 		iklanPending = true;
-		function iklan(){
-			if(iklanPending){
+		function iklan() {
+			if (iklanPending) {
 				iklanPending = false;
-		fetch('https://hadi-api.herokuapp.com/iklan/fikri_am').then(resp=>resp.json()).then(resp=>{
-			document.querySelector('#iklan_body').innerHTML = `<a target="_blank" style="color: white;" href="https://m.youtube.com/watch?v=${RegExp("/vi/(.*?)/").exec(resp.thumbnail)[1]}"><img alt="Subscribe Fikri Am" style="max-width: 100%" src="${resp.thumbnail}">
-												<br>
-												${resp.title}<br>
-												<small>${resp.published}</small>
-												</a>`;iklanPending=true;
-		});}}
-		repeatiklan = setInterval(()=>{
+				fetch('https://hadi-api.herokuapp.com/iklan/fikri_am').then(resp=>resp.json()).then(resp=> {
+					document.querySelector('#iklan_body').innerHTML = `<a target="_blank" style="color: white;" href="https://m.youtube.com/watch?v=${RegExp("/vi/(.*?)/").exec(resp.thumbnail)[1]}"><img alt="Subscribe Fikri Am" style="max-width: 100%" src="${resp.thumbnail}">
+					<br>
+					${resp.title}<br>
+					<small>${resp.published}</small>
+					</a>`; iklanPending = true;
+				});
+			}}
+		repeatiklan = setInterval(()=> {
 			iklan();
-		},5000);
+		}, 5000);
 		iklan();
 		//popup request menu
 		function requestmenu() {
@@ -53,22 +43,22 @@ try {
 				timer: 3500,
 				timerProgressBar: true
 			})
-		let tks = "",
-		region = navigator.language.toLowerCase(),
-		date = new Date();
-		try{
-			region = region.split("-")[0].toLowerCase();
-		}catch(e){}
-		if(/id|indonesia/.test(region)&&date.getMonth()==10&&date.getDate()==10){
-			tks = `<p style="color: red;background: rgba(128,128,128,0.3);">selamat ha<span style="color: white;">ri pahlawan</span></p><div style="border:1px solid black;background:red;display:block;color:red;">.</div><div style="border:1px solid black;border-top:none;background:white;display:block;color:white;">.</div>`;
-		}else if(/id|indonesia/.test(region)&&date.getMonth()==10&&date.getDate()==12){
-			tks = `<p style="color: black;">selamat hari ayah nasional</p>`;
-		}else if(/id|indonesia/.test(region)&&date.getMonth()==8&&date.getDate()==17){
-			tks = tks = `<p style="color: red;background: rgba(128,128,128,0.3);">Selamat hari kem<span style="color: white;">erdekaan Indonesia</span></p><div style="border:1px solid black;background:red;display:block;color:red;">.</div><div style="border:1px solid black;border-top:none;background:white;display:block;color:white;">.</div>`;
-		} else{
-			tks = `<p style="color: gray;">kok sepi bang? ... Rame in lah :)</p>`;
-		}
-		
+			let tks = "",
+			region = navigator.language.toLowerCase(),
+			date = new Date();
+			try {
+				region = region.split("-")[0].toLowerCase();
+			}catch(e) {}
+			if (/id|indonesia/.test(region) && date.getMonth() == 10 && date.getDate() == 10) {
+				tks = `<p style="color: red;background: rgba(128,128,128,0.3);">selamat ha<span style="color: white;">ri pahlawan</span></p><div style="border:1px solid black;background:red;display:block;color:red;">.</div><div style="border:1px solid black;border-top:none;background:white;display:block;color:white;">.</div>`;
+			} else if (/id|indonesia/.test(region) && date.getMonth() == 10 && date.getDate() == 12) {
+				tks = `<p style="color: black;">selamat hari ayah nasional</p>`;
+			} else if (/id|indonesia/.test(region) && date.getMonth() == 8 && date.getDate() == 17) {
+				tks = tks = `<p style="color: red;background: rgba(128,128,128,0.3);">Selamat hari kem<span style="color: white;">erdekaan Indonesia</span></p><div style="border:1px solid black;background:red;display:block;color:red;">.</div><div style="border:1px solid black;border-top:none;background:white;display:block;color:white;">.</div>`;
+			} else {
+				tks = `<p style="color: gray;">kok sepi bang? ... Rame in lah :)</p>`;
+			}
+
 			Toast.fire({
 				icon: 'info',
 				title: tks
