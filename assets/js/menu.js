@@ -1,5 +1,5 @@
 try {
-	alert('Donasi lah bro, masa make doang kaga donasi');
+	alert('Ingfo kalo api ini di jadiin berbayar gimana?');
 	alert('Nih api sepi bang bantu promosiin bang, kalo sekiranya nih api ada yang kurang ato gimana contact gua :)');
 	//-- tag html control
 	item_fc = document.querySelector('[data-widget=treeview]');
