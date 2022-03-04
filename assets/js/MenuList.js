@@ -102,10 +102,6 @@ item_list = [{
 			{
 				"url": "/api/textpro/black-white-bear-mascot?teks=lolicon",
 				"name": "Online black and white bear mascot logo creation"
-			},
-			{
-				"url": "/api/textpro/on-the-beach",
-				"name": "3d realistic text effect on the beach online"
 			}]
 	},
 	{
@@ -117,7 +113,7 @@ item_list = [{
 				name: "realistic flaming text effect online"
 			},
 			{
-				url: "/api/photoxy/tiktok-effect",
+				url: "/api/photoxy/tiktok-effect?text=lolicon&text2=loli",
 				name: "make tik tok text effect"
 			},
 			{
