@@ -88,19 +88,19 @@ item_list = [{
 				"name": "Create neon devil wings text effect online free"
 			},
 			{
-				"url": "/api/textpro/futuristic-technology",
+				"url": "/api/textpro/futuristic-technology?teks=lolicon",
 				"name": "Create a futuristic technology neon light text effect"
 			},
 			{
-				"url": "/api/textpro/on-the-beach",
+				"url": "/api/textpro/on-the-beach?background=1&teks=lolicon",
 				"name": "Create 3D realistic text effect on the beach online"
 			},
 			{
-				"url": "/api/textpro/3d-underwater-text",
+				"url": "/api/textpro/3d-underwater-text?teks=lolicon",
 				"name": "3D underwater text effect generator online"
 			},
 			{
-				"url": "/api/textpro/black-white-bear-mascot",
+				"url": "/api/textpro/black-white-bear-mascot?teks=lolicon",
 				"name": "Online black and white bear mascot logo creation"
 			},
 			{
@@ -111,12 +111,9 @@ item_list = [{
 	{
 		name: 'Photooxy',
 		icon: 'fas fa-image',
-		item: [{
-			url: "/api/photoxy/manga-naruto",
-			name: "make naruto banner online free"
-		},
+		item: [
 			{
-				url: "/api/photoxy/flaming-fire",
+				url: "/api/photoxy/flaming-fire?text=lolicon",
 				name: "realistic flaming text effect online"
 			},
 			{
