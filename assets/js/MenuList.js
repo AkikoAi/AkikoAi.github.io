@@ -20,6 +20,10 @@ item_list = [{
 	name: 'Downloader',
 	icon: 'fas fa-arrow-down',
 	item: [{
+		"url": "/api/instagram?url=https://www.instagram.com/p/CMeFrnTp8as",
+		"name": "Instagram video foto downloader"
+	},
+	{
 		"url": "/api/ytvideo",
 		"name": "Yt video downloader"
 	},
