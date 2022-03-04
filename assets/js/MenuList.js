@@ -56,7 +56,7 @@ item_list = [{
 			"name": "tiktok downloader"
 		},
 		{
-			"url": "/api/pinterest",
+			"url": "/api/pinterest?q=loli",
 			"name": "Pinterest"
 		},
 		{
@@ -68,11 +68,11 @@ item_list = [{
 			"name": "google result search"
 		},
 		{
-			"url": "/api/nhentai",
+			"url": "/api/nhentai?id=386902",
 			"name": "nhentai pdf downloader"
 		},
 		{
-			"url": "/api/githubstalk",
+			"url": "/api/githubstalk?username=keqing",
 			"name": "Github stalk"
 		}]
 },
@@ -80,11 +80,11 @@ item_list = [{
 		name: 'TextPro',
 		icon: 'fas fa-text-height',
 		item: [{
-			"url": "/api/textpro/tiktok",
+			"url": "/api/textpro/tiktok?teks1=lolis&teks2=lolicon",
 			"name": "Create Glitch Text Effect Style Tik Tok"
 		},
 			{
-				"url": "/api/textpro/neon-devil-wings",
+				"url": "/api/textpro/neon-devil-wings?teks=lolicon",
 				"name": "Create neon devil wings text effect online free"
 			},
 			{
