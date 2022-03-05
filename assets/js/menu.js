@@ -1,9 +1,9 @@
 try {
-	alert('Nih api sepi bang bantu promosiin bang, kalo sekiranya nih api ada yang kurang ato gimana contact gua :)');
 	//-- tag html control
 	item_fc = document.querySelector('[data-widget=treeview]');
 	item_msg = document.querySelector('#notify');
 	if (isDocs == undefined) {
+	alert('Nih api sepi bang bantu promosiin bang, kalo sekiranya nih api ada yang kurang ato gimana contact gua :)');
 		tag_pengunjung = document.querySelector('span#pengunjung_length');
 		tag_cpu = document.querySelector('span#cpu_usage');
 		tag_clock = document.querySelector('span#clock');
