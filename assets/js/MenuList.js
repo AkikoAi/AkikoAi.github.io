@@ -23,10 +23,10 @@ item_list = [{
 		"url": "/api/instagram?url=https://www.instagram.com/p/CMeFrnTp8as",
 		"name": "Instagram video foto downloader"
 	},
-	{
-		"url": "/api/ytvideo",
-		"name": "Yt video downloader"
-	},
+		{
+			"url": "/api/ytvideo",
+			"name": "Yt video downloader"
+		},
 		{
 			"url": "/api/ytaudio",
 			"name": "Yt audio downloader"
@@ -111,11 +111,10 @@ item_list = [{
 	{
 		name: 'Photooxy',
 		icon: 'fas fa-image',
-		item: [
-			{
-				url: "/api/photoxy/flaming-fire?text=lolicon",
-				name: "realistic flaming text effect online"
-			},
+		item: [{
+			url: "/api/photoxy/flaming-fire?text=lolicon",
+			name: "realistic flaming text effect online"
+		},
 			{
 				url: "/api/photoxy/tiktok-effect?text=lolicon&text2=loli",
 				name: "make tik tok text effect"
@@ -450,7 +449,7 @@ item_list = [{
 				name: 'cecan'
 			},
 			{
-				event: 'NEW',
+
 				url: '/api/randomImage/img/megumin',
 				name: 'megumin'
 			},
@@ -478,7 +477,12 @@ item_list = [{
 	{
 		name: 'Nulis',
 		icon: 'fas fa-certificate',
-		item: [{
+		item: [
+			{
+			url: '/api/canvas/delete',
+			name: 'Delete'
+		},
+			{
 			url: '/api/canvas/nulis',
 			name: 'Nulis'
 		},
