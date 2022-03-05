@@ -479,7 +479,7 @@ item_list = [{
 		icon: 'fas fa-certificate',
 		item: [
 			{
-			url: '/api/docs/delete',
+			url: '/docs/delete',
 			name: 'Delete'
 		},
 			{
