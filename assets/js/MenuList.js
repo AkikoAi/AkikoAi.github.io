@@ -479,6 +479,12 @@ item_list = [{
 		icon: 'fas fa-certificate',
 		item: [
 			{
+				event: 'NEW',
+				url: '/docs/triggered',
+				name: 'Triggered'
+			},
+			{
+			event: 'NEW',
 			url: '/docs/delete',
 			name: 'Delete'
 		},
