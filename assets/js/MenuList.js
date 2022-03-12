@@ -60,6 +60,11 @@ item_list = [{
 			"name": "tiktok downloader"
 		},
 		{
+			event: 'NEW',
+			"url": "/api/pinterestv2?q=loli",
+			"name": "Pinterest V2"
+		},
+		{
 			"url": "/api/pinterest?q=loli",
 			"name": "Pinterest"
 		},
@@ -480,11 +485,21 @@ item_list = [{
 		item: [
 			{
 				event: 'NEW',
+				url: '/api/attp?text=text=Hello bang',
+				name: 'Attp'
+			},
+			{
+				event: 'NEW',
+				url: '/api/ttp?text=Hello bang',
+				name: 'Ttp'
+			},
+			{
+				
 				url: '/docs/triggered',
 				name: 'Triggered'
 			},
 			{
-			event: 'NEW',
+			
 			url: '/docs/delete',
 			name: 'Delete'
 		},
