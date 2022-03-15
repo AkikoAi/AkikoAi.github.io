@@ -485,12 +485,12 @@ item_list = [{
 		item: [
 			{
 				event: 'NEW',
-				url: '/api/attp?text=text=Hello bang',
+				url: '/api/canvas/attp?text=text=Hello bang',
 				name: 'Attp'
 			},
 			{
 				event: 'NEW',
-				url: '/api/ttp?text=Hello bang',
+				url: '/api/canvas/ttp?text=Hello bang',
 				name: 'Ttp'
 			},
 			{
