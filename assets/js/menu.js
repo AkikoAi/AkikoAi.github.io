@@ -109,15 +109,15 @@ try {
 		}, 2000);
 
 		//-- pengunjung visitor length
-		if (localStorage.getItem('Pengunjung_2022')) {
+		if (localStorage.getItem('Pengunjung_askjfnck')) {
 			setInterval(function() {
 				fetch("https://api.countapi.xyz/get/hadi-api-viewer-2022/").then(res=>res.json()).then(res=> {
 					tag_pengunjung.innerHTML = res.value+" <small>perangkat</small>";
 				});
 			}, 2500);
 		} else {
-			fetch("https://api.countapi.xyz/hit/hadi-api-viewe-2022/").then(res=>res.json()).then(res=> {
-				localStorage.setItem('Pengunjung_2022', 'true');
+			fetch("https://api.countapi.xyz/hit/hadi-api-viewer-2022/").then(res=>res.json()).then(res=> {
+				localStorage.setItem('Pengunjung_askjfnck', 'true');
 				tag_pengunjung.innerHTML = res.value+" <small>perangkat</small>";
 			});
 		}
