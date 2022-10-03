@@ -3,7 +3,7 @@ try {
 	item_fc = document.querySelector('[data-widget=treeview]');
 	item_msg = document.querySelector('#notify');
 	if (isDocs == undefined) {
-	alert('Nih api sepi bang bantu promosiin bang, kalo sekiranya nih api ada yang kurang ato gimana contact gua :)');
+	alert('Hallo User !!!, bagaimana menurut anda jika api ini menjadi berbayar, (tanpa limit request) hanya member bulanan,\nuang yang dikumpulkan akan di gunakan untuk pembiayaan server, berikan pendapat anda dengan chat ke nomor wa admin\n628990911211\njawaban anda akan kami tunggu, apabila anda merasa keberatan bisakan anda memberi tahu saya kenapa?');
 		tag_pengunjung = document.querySelector('span#pengunjung_length');
 		tag_cpu = document.querySelector('span#cpu_usage');
 		tag_clock = document.querySelector('span#clock');
