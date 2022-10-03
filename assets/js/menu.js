@@ -229,7 +229,7 @@ try {
 		let region = navigator.language;
 		let isVPN = false;
 		function net() {
-			fetch('https://hadi-api.herokuapp.com/api/ip').then(res=>res.json()).then(res=> {
+			fetch('https://hadi-api.cf/api/ip').then(res=>res.json()).then(res=> {
 				res = res.result;
 				if (!region.includes(res.countryCode)) isVPN = true;
 				tag_netinfo.innerHTML = `<b>IP: </b>${res.ip}<br><b>ISP: </b>${res.isp}<br><b>CITY: </b>${res.city}<br><b>DISTRICT: </b>${res.district}<br><b>TIMEZONE: </b>${res.timezone}<br><b>COUNTRY: </b>${res.country}<br><b>VPN: </b>${region.includes(res.countryCode) ? "false": "true"}<br><b>LATITUDE: </b>${res.latitude}<br><b>LONGITUDE: </b>${res.longitude}`;
@@ -264,7 +264,7 @@ try {
 									`url yang anda masukkan tidak valid`
 								);
 							} else {
-								return fetch('https://hadi-api.herokuapp.com/api/yt2/audio?url='+value).then(resp=>resp.json()).then(resp=> {
+								return fetch('https://hadi-api.cf/api/yt2/audio?url='+value).then(resp=>resp.json()).then(resp=> {
 									if (resp.status == 200) {
 										var audio = document.createElement('audio');
 										audio.autoplay = "autoplay";
