@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maintenance</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #003B73, #001F44);
+            font-family: 'Orbitron', sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
             color: #ffffff;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            overflow: hidden;
         }
 
         .container {
@@ -22,18 +25,32 @@
             padding: 20px;
             border: 2px solid rgba(255, 255, 255, 0.2);
             border-radius: 12px;
-            background: rgba(0, 0, 0, 0.3);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+            background: rgba(15, 12, 41, 0.8);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f, 0 0 30px #ff007f;
+            }
+            to {
+                box-shadow: 0 0 20px #007bff, 0 0 40px #007bff, 0 0 60px #007bff;
+            }
         }
 
         .container h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             margin-bottom: 10px;
+            color: #ff007f;
+            text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f;
         }
 
         .container p {
             font-size: 1.2rem;
             margin-bottom: 20px;
+            color: #00d4ff;
+            text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff;
         }
 
         .container a {
@@ -42,19 +59,31 @@
             font-size: 1rem;
             color: #ffffff;
             text-decoration: none;
-            background: #005BB5;
+            background: linear-gradient(90deg, #ff007f, #007bff);
             border-radius: 8px;
-            transition: background 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
         .container a:hover {
-            background: #0073E6;
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #ff007f, 0 0 20px #007bff;
         }
 
         .icon {
-            font-size: 4rem;
+            font-size: 5rem;
             margin-bottom: 20px;
-            color: #00ADEF;
+            color: #00d4ff;
+            text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
         }
     </style>
 </head>
